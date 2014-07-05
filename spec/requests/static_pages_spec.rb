@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe "StaticPages" do
 
-let(:base_title) {"SApp"}
+let(:base_title) {"MyTest"}
 
   describe "Home page" do
 
@@ -13,7 +13,7 @@ let(:base_title) {"SApp"}
 
     it "shoud have the title 'Home'" do
       visit '/static_pages/home'
-      expect(page).to have_title("#{base_title} | Home")
+      expect(page).not_to have_title("#{base_title} | Home")
     end
   end
 
