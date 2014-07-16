@@ -23,5 +23,5 @@ doc/
 .project
 .DS_Store
 .idea
-.sss-cache/
+.sass-cache/
 #.secret
