@@ -29,7 +29,7 @@ module SApp
     
     # Begin Hack Alert - to bypass config/initializers that could not be pushed 
 
-    config.paths['config/initializers'] = Rails.root.jon('bin','initializers')
+    config.paths['config/initializers'] = Rails.root.join('bin','initializers')
 
     # End Hack Alert - to bypass config/initializers that could not be pushed 
   end
