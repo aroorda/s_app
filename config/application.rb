@@ -26,6 +26,11 @@ module SApp
     # config.i18n.default_locale = :de
 
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+    
+    # Begin Hack Alert - to bypass config/initializers that could not be pushed 
 
+    config.paths['config/initializers'] = Rails.root.jon('bin','initializers')
+
+    # End Hack Alert - to bypass config/initializers that could not be pushed 
   end
 end
