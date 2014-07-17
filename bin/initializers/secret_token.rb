@@ -9,4 +9,5 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-SApp::Application.config.secret_key_base = 'a488b8a3543a8e2b96d8e2ec8a410ba649fde126754274f35d36bf5c5c9299723c96f492b23bc9db5c3939a6c0be0b42651d90f8322797e7a7aa88bb0b043aad'
+#SApp::Application.config.secret_key_base = 'a488b8a3543a8e2b96d8e2ec8a410ba649fde126754274f35d36bf5c5c9299723c96f492b23bc9db5c3939a6c0be0b42651d90f8322797e7a7aa88bb0b043aad'
+SApp::Application.config.secret_key_base = ENV['SECRET_KEY_BASE']
