@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe "StaticPages" do
 
-let(:base_title) {"MyTest"}
+let(:base_title) {"Gaia"}
 
   subject { page }
 
